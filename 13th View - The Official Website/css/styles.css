@@ -38,7 +38,135 @@ p, h1 {
     height: auto;
     margin-bottom: 15px; /*Adding margin-bottom to push up the cart icon*/
 }
+/* Modals */
 
+.modal {
+    display: none;
+    position: fixed;
+    padding-top: 80px;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+   
+/* Modal Content */
+.modal-content {
+    background-color: #d9e8fc; /* Light blue background */
+    margin: 10% auto;
+    padding: 30px;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Welcome Text */
+
+#welcome {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.modal-content span {
+    font-family: 'Futura PT', sans-serif;
+}
+  
+  /* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+  
+.input-text {
+    font-size: 1.25rem;
+    color: #595959;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+}
+  
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    display: none;
+}
+  
+  /* Divider between Inputs and Sign In Button */
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #e2e0e0;
+    margin: 20px 0;
+}
+  
+  /* Sign In Button */
+.sign-in-btn {
+    background-color: #595959;
+    font-family: 'Futura PT', sans-serif;
+    font-size: 1.45rem;
+    color: white;
+    border: none;
+    width: 100%; /* Full width */
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.sign-in-btn:hover {
+    background-color: #444;
+}
+  
+  /* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+  
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Futura PT', sans-serif;
+    font-size: 0.9rem;
+}
+  
+.footer-links a:hover {
+    text-decoration: underline;
+}
+  
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+#loginText {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#loginText:hover {
+    color: lightblue;  /* Optional: Change color on hover */
+}
+
+  
 /* Hero Section */
 
 .hero-section p {
