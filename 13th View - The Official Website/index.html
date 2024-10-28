@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>13th View</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- NavBar -->
@@ -17,12 +18,40 @@
             <div class="header-right">
                 <p>Shop</p>
                 <p>Contact</p>
-                <p>Login</p>
+                <p id="loginText">Login</p>
                 <img src="./images/shopping-cart-solid.svg" alt="Shopping Cart Icon">
             </div>
         </div>
     </header>
 
+    <!-- Login Modal -->
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <p id="welcome">Welcome to 13th View </p>
+        
+            <div class="input-group" id="emailGroup">
+                <span class="input-text" id="emailText">Email</span>
+                <input type="email" id="emailInput" placeholder="Email" style="display: none;" required>
+            </div>
+        
+            <div class="input-group" id="passwordGroup">
+                <span class="input-text" id="passwordText">Password</span>
+                <input type="password" id="passwordInput" placeholder="Password" style="display: none;" required>
+            </div>
+        
+            <hr class="divider">
+                    
+            <button class="sign-in-btn">Sign In</button>
+        
+            <div class="footer-links">
+                <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+                <a href="#" id="createAccountLink">Create Account</a>
+            </div>
+        </div>
+    </div>
+      
+  
     <!-- Hero Section -->
 
     <div class="hero-section">
