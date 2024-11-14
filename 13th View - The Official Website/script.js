@@ -1,8 +1,7 @@
 // Select elements
 const loginText = document.getElementById('loginText');
-const loginModal = document.getElementById('loginModal');
-const closeModalBtn = document.querySelector('.close');
-// Select elements
+const loginModal = document.getElementById('loginModal'); // Keep this one, remove the duplicate below
+const closeModalBtn = document.getElementById('closeModal'); // Use the correct ID for your close button
 const emailText = document.getElementById('emailText');
 const emailInput = document.getElementById('emailInput');
 const passwordText = document.getElementById('passwordText');
@@ -13,20 +12,19 @@ const createAccountLink = document.getElementById('createAccountLink');
 const backToLoginLink = document.getElementById('backToLoginLink');
 const loginForm = document.getElementById('loginForm');
 const createAccountForm = document.getElementById('createAccountForm');
-const modalContent = document.querySelector('.modal-content');//  reduce the create account 
-
+const modalContent = document.querySelector('.modal-content');
 
 // Function to show input field when text is clicked
 emailText.addEventListener('click', () => {
   emailText.style.display = 'none';
   emailInput.style.display = 'block';
-  emailInput.focus(); // Focus the input field
+  emailInput.focus();
 });
 
 passwordText.addEventListener('click', () => {
   passwordText.style.display = 'none';
   passwordInput.style.display = 'block';
-  passwordInput.focus(); // Focus the input field
+  passwordInput.focus();
 });
 
 // Optional: Revert to text if input loses focus without any value
@@ -43,20 +41,21 @@ passwordInput.addEventListener('blur', () => {
     passwordText.style.display = 'block';
   }
 });
+
 // Show Create Account Form
 createAccountLink.addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default anchor behavior
-  loginForm.style.display = 'none'; // Hide Login Form
-  createAccountForm.style.display = 'block'; // Show Create Account Form
-  modalContent.classList.add('small'); // Reduce modal size
-
+  event.preventDefault();
+  loginForm.style.display = 'none';
+  createAccountForm.style.display = 'block';
+  modalContent.classList.add('small');
 });
+
 // Switch Back to Login Form
 backToLoginLink.addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default anchor behavior
-  createAccountForm.style.display = 'none'; // Hide Create Account Form
-  loginForm.style.display = 'block'; // Show Login Form
-  modalContent.classList.remove('small'); // Restore original modal size
+  event.preventDefault();
+  createAccountForm.style.display = 'none';
+  loginForm.style.display = 'block';
+  modalContent.classList.remove('small');
 });
 
 // Open the modal when the "Login" text is clicked
@@ -75,9 +74,3 @@ window.addEventListener('click', (event) => {
     loginModal.style.display = 'none';
   }
 });
-
-
-
-
-
-
