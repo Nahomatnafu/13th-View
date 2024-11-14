@@ -25,32 +25,71 @@
     </header>
 
     <!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <p id="welcome">Welcome to 13th View</p>
 
-    <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <p id="welcome">Welcome to 13th View </p>
-        
+        <!-- Login Form -->
+        <div id="loginForm">
             <div class="input-group" id="emailGroup">
                 <span class="input-text" id="emailText">Email</span>
                 <input type="email" id="emailInput" placeholder="Email" style="display: none;" required>
             </div>
-        
+
             <div class="input-group" id="passwordGroup">
                 <span class="input-text" id="passwordText">Password</span>
                 <input type="password" id="passwordInput" placeholder="Password" style="display: none;" required>
             </div>
-        
+
             <hr class="divider">
-                    
             <button class="sign-in-btn">Sign In</button>
-        
+
             <div class="footer-links">
                 <a href="#" id="forgotPasswordLink">Forgot Password?</a>
                 <a href="#" id="createAccountLink">Create Account</a>
             </div>
         </div>
+
+        <!-- Create Account Form (Initially Hidden) -->
+        <div id="createAccountForm" style="display: none;">
+       
+            <div class="input-row">
+
+            <div class="input-group">
+                
+                <input type="text" id="firstNameInput" placeholder="First Name" required>
+            </div>
+
+            <div class="input-group">
+               
+                <input type="text" id="lastNameInput" placeholder="Last Name" required>
+            </div>
+        </div>
+
+            <div class="input-group">
+               
+                <input type="email" id="createEmailInput" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+               
+                <input type="email" id="createPassword" placeholder="Create Password" required>
+            </div>
+
+            <div class="input-group">
+             
+                <input type="password" id="retypePasswordInput" placeholder="Retype Password" required>
+            </div>
+
+            <hr class="divider">
+            <button class="create-account-btn">Create Account</button>
+
+            <div class="footer-links">
+                <a href="#" id="backToLoginLink">Already have an account? Sign In</a>
+            </div>
+        </div>
     </div>
-      
+</div>
+
   
     <!-- Hero Section -->
 

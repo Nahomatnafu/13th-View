@@ -8,6 +8,14 @@ const emailInput = document.getElementById('emailInput');
 const passwordText = document.getElementById('passwordText');
 const passwordInput = document.getElementById('passwordInput');
 
+// New elements for switching forms
+const createAccountLink = document.getElementById('createAccountLink');
+const backToLoginLink = document.getElementById('backToLoginLink');
+const loginForm = document.getElementById('loginForm');
+const createAccountForm = document.getElementById('createAccountForm');
+const modalContent = document.querySelector('.modal-content');//  reduce the create account 
+
+
 // Function to show input field when text is clicked
 emailText.addEventListener('click', () => {
   emailText.style.display = 'none';
@@ -34,6 +42,21 @@ passwordInput.addEventListener('blur', () => {
     passwordInput.style.display = 'none';
     passwordText.style.display = 'block';
   }
+});
+// Show Create Account Form
+createAccountLink.addEventListener('click', (event) => {
+  event.preventDefault(); // Prevent default anchor behavior
+  loginForm.style.display = 'none'; // Hide Login Form
+  createAccountForm.style.display = 'block'; // Show Create Account Form
+  modalContent.classList.add('small'); // Reduce modal size
+
+});
+// Switch Back to Login Form
+backToLoginLink.addEventListener('click', (event) => {
+  event.preventDefault(); // Prevent default anchor behavior
+  createAccountForm.style.display = 'none'; // Hide Create Account Form
+  loginForm.style.display = 'block'; // Show Login Form
+  modalContent.classList.remove('small'); // Restore original modal size
 });
 
 // Open the modal when the "Login" text is clicked

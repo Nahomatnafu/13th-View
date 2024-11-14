@@ -62,6 +62,13 @@ p, h1 {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.modal-content.small {
+    width: 400px; /* Reduce the width */
+    padding: 30px;
+    height: 350px;
+   
+}
+
   
   /* Welcome Text */
 
@@ -79,6 +86,10 @@ p, h1 {
     position: relative;
     margin-bottom: 20px;
     width: 100%;
+}
+.input-row {
+    display: flex;
+    gap: 27px;
 }
   
 .input-text {
@@ -100,6 +111,11 @@ p, h1 {
     font-size: 1rem;
     display: none;
 }
+
+/* Create Account Inputs */
+#createAccountForm .input-group input {
+    display: block; /* Always visible for create account */
+}
   
   /* Divider between Inputs and Sign In Button */
 .divider {
@@ -110,7 +126,7 @@ p, h1 {
 }
   
   /* Sign In Button */
-.sign-in-btn {
+.sign-in-btn,.create-account-btn{
     background-color: #595959;
     font-family: 'Futura PT', sans-serif;
     font-size: 1.45rem;
@@ -120,9 +136,10 @@ p, h1 {
     padding: 15px;
     border-radius: 10px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
   
-.sign-in-btn:hover {
+.sign-in-btn:hover,create-account-btn:hover {
     background-color: #444;
 }
   
@@ -142,6 +159,10 @@ p, h1 {
   
 .footer-links a:hover {
     text-decoration: underline;
+}
+/* Create Account Footer Links */
+#createAccountForm .footer-links {
+    justify-content: center;
 }
   
 
