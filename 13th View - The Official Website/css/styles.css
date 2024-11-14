@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-p, h1 {
+p, h1, a {
     font-family: 'Futura PT', sans-serif;
 }
 
@@ -28,10 +28,15 @@ p, h1 {
 }
 
 .header-right p {
-    font-size: 1.25rem;
-    
-        
+    font-size: 1.25rem;    
 }
+
+.header-right a {
+    text-decoration: none; /* Remove the underline */
+    color: inherit; /* Use the same color as the other elements */
+    font-size: 1.25rem; /* Match the font size of the other elements */
+}
+
 
 .header-right img {
     width: 30px;
