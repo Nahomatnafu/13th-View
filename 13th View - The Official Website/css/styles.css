@@ -69,9 +69,7 @@ p, h1, a {
 }
 .modal-content.small {
     width: 400px; /* Reduce the width */
-    padding: 30px;
-    height: 350px;
-   
+    padding: 30px;   
 }
 
   
@@ -113,6 +111,7 @@ p, h1, a {
     border: 1px solid #000;
     border-radius: 8px;
     outline: none;
+    font-family: 'Futura PT', sans-serif;
     font-size: 1rem;
     display: none;
 }
@@ -166,9 +165,10 @@ p, h1, a {
     text-decoration: underline;
 }
 /* Create Account Footer Links */
-#createAccountForm .footer-links {
+/* #createAccountForm .footer-links {
     justify-content: center;
-}
+} */
+ 
   
 
 .close {
